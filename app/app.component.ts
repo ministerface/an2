@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'wholesale',
-  template: '43'
+  templateUrl: 'app/app.template.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  title = 'Wholesale access interface';
+}
