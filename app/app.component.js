@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Wholesale access interface';
+        this.copyright = 'DonRiver';
     }
     AppComponent = __decorate([
         core_1.Component({
