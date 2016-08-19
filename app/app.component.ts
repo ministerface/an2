@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Wholesale access interface';
+  copyright = 'DonRiver';
 }
