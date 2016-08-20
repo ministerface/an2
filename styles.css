@@ -106,3 +106,74 @@ margin-top: 0px;
   bottom: 0;
   width: 100%;
 }
+
+.red-light {
+  background-color: #ea7e7e;
+  color: #fff;
+}
+.red-light:hover {
+  background-color: #922a2a !important;
+}
+
+.green-light {
+      background-color: #85ca51;
+  color: #fff;
+}
+
+.green-light:hover {
+      background-color: #537d32 !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar {
+    padding:0px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ui-dialog .ui-dialog-title {
+  float: none;
+  margin: 0;
+  font-weight: 300;
+
+}
+
+.ui-dialog .ui-dialog-content {
+    text-align: center;
+        padding: 20px;
+}
+
+.black-dropdown {
+  min-width: 160px;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>.open>a {
+  background-color: #000000 !important;
+}
+
+.ui-dialog {
+    border-radius: 0;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  background: #3e3e3e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu>li {
+  margin-bottom: 1px;
+}
+.dropdown-menu>li:last-child {
+  margin-bottom: 0px;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+      text-align: center;
+      background-color: #7b7b7b;
+      color:#fff;
+}
