@@ -177,3 +177,22 @@ margin-top: 0px;
       background-color: #7b7b7b;
       color:#fff;
 }
+
+.ui-growl {
+    bottom: 20px;
+    top: inherit;
+}
+
+.ui-growl-item-container.ui-state-highlight.ui-growl-message-info {
+  background-color: #559029;
+    border-color: #4e8a1f;
+}
+
+.ui-growl-message {
+    padding: 0px 10px;
+     width: 100%;
+    float: none;
+}
+.ui-growl-image {
+  display: none;
+}

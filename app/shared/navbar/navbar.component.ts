@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Message } from 'primeng/primeng';
+
 
 @Component({
   moduleId: module.id,
@@ -6,12 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: 'navbar.component.html'
 })
 export class NavbarComponent {
+
+  msgs: Message[] = [];
+
   dropdown: boolean = false;
-  display: boolean = false;
+
   item: string = "";
+
   isActivate(event): void {
-    this.item = event.target.text;
-    this.display = true;
+    let itemText = event.target.text;
+    this.msgs.push({severity:'info', summary:'Confirmation message', detail: itemText+'has been activated!'});
+    this.dropdown = false;
   }
 
   isOpen(): void {

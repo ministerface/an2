@@ -8,8 +8,8 @@
             <a (click)="isOpen()" href="#" class="dropdown-toggle black-nav-link black-dropdown">Menu <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li><a (click)="isActivate($event)" href="#">NBN ISP Report</a></li>
-                <li><a href="#">DSL ISP Report</a></li>
-                <li><a href="#">Configuration</a></li>
+                <li><a (click)="isActivate($event)" href="#">DSL ISP Report</a></li>
+                <li><a (click)="isActivate($event)" href="#">Configuration</a></li>
             </ul>
         </li>
         <li><a class="black-nav-link margin-left-15" href="#">Back</a></li>
@@ -17,7 +17,4 @@
     </ul>
 </nav>
 
-<p-dialog header="Confim message" [(visible)]="display" modal="modal" [(draggable)]="draggable" [(resizable)]="resizable" showEffect="fade">
-    <p>{{item}} has been activated!</p>
-
-</p-dialog>
+<p-growl [value]="msgs" life="5000"></p-growl>

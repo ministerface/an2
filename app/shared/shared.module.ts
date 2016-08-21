@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from './navbar/index';
 import { UserbarComponent } from './userbar/index';
-import { Dialog } from 'primeng/primeng';
+import { Dialog, Growl} from 'primeng/primeng';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { Dialog } from 'primeng/primeng';
     { provide: 'Window',  useValue: window }
   ],
   imports: [CommonModule],
-  declarations: [NavbarComponent, UserbarComponent, Dialog],
+  declarations: [NavbarComponent, UserbarComponent, Dialog, Growl],
   exports: [NavbarComponent, UserbarComponent, Dialog]
 })
 export class SharedModule {
