@@ -17,7 +17,7 @@ export class NavbarComponent {
 
   isActivate(event): void {
     let itemText = event.target.text;
-    this.msgs.push({severity:'info', summary:'Confirmation message', detail: itemText+'has been activated!'});
+    this.msgs.push({severity:'info', summary:'Confirmation message', detail: itemText+' has been activated!'});
     this.dropdown = false;
   }
 

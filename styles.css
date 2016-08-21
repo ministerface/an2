@@ -196,3 +196,14 @@ margin-top: 0px;
 .ui-growl-image {
   display: none;
 }
+.nav-tabs>li {
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-tabs>li.active {
+    background-color: #3e3e3e;
+    color: #fff;
+    cursor: default;
+}

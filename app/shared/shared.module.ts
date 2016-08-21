@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 import { NavbarComponent } from './navbar/index';
@@ -13,8 +14,12 @@ import { Dialog, Growl} from 'primeng/primeng';
   ],
   imports: [CommonModule],
   declarations: [NavbarComponent, UserbarComponent, Dialog, Growl],
-  exports: [NavbarComponent, UserbarComponent, Dialog]
+  exports: [CommonModule, FormsModule, NavbarComponent, UserbarComponent, Dialog]
 })
 export class SharedModule {
-
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: SharedModule
+    };
+  }
 }
