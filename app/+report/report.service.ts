@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
-
-import { Report } from './report';
-import { REPORT } from './data-report';
+import { Report, REPORT } from './index';
 
 @Injectable()
 export class ReportService {
-  getReport(): Promise<Report> {
-    return Promise.resolve(REPORT);
-  }
+    getReport(): Promise<Report> {
+        return Promise.resolve(REPORT);
+    }
 }

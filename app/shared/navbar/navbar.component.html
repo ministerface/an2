@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default">
+
     <ul class="nav navbar-nav">
         <li class="active"><a class="black-nav-link" href="#">Номе <span class="sr-only">(current)</span></a></li>
     </ul>
@@ -12,9 +13,11 @@
                 <li><a (click)="isActivate($event)" href="#">Configuration</a></li>
             </ul>
         </li>
-        <li><a class="black-nav-link margin-left-15" href="#">Back</a></li>
-
+        <li>
+          <a class="black-nav-link margin-left-15" href="#">Back</a>
+        </li>
     </ul>
+
 </nav>
 
 <p-growl [value]="msgs" life="5000"></p-growl>

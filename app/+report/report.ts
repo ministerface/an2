@@ -1,10 +1,9 @@
-import { ReportItem } from './report-item';
-import { ReportCategory } from './report-category';
+import { ReportItem, ReportCategory } from './index';
 
 export class Report {
-  id: number;
-  title: string;
-  date: Date;
-  category: ReportCategory[];
-  data: ReportItem[];
+    id: number;
+    title: string;
+    date: Date;
+    category: ReportCategory[];
+    data: ReportItem[];
 }

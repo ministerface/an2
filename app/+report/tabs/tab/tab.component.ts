@@ -1,25 +1,21 @@
 import { Component, Input } from '@angular/core';
-import { ReportCategory } from '../../report-category';
-import { ReportItem } from '../../report-item';
+import { ReportCategory, ReportItem } from '../../index';
 
 @Component({
-  moduleId: module.id,
-  selector: 'dr-tab',
-  templateUrl: 'tab.component.html'
+    moduleId: module.id,
+    selector: 'dr-tab',
+    templateUrl: 'tab.component.html'
 })
+
 export class TabComponent {
-  @Input() category: ReportCategory[];
-  @Input() data: ReportItem[];
+    @Input() category: ReportCategory[];
+    @Input() data: ReportItem[];
 
-  setColor(peak): string {
-    if(peak > 10) {
-      return "red-light";
-    } else if (peak >= 8 && peak <= 10) {
-      return "green-light";
+    setColor(peak): string {
+        if (peak > 10) {
+            return "red-light";
+        } else if (peak >= 8 && peak <= 10) {
+            return "green-light";
+        }
     }
-
-
-
-  }
-
 }

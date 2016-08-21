@@ -1,20 +1,19 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent }  from './app.component';
-
 import { ReportModule } from './+report/report.module';
 import { SharedModule } from './shared/shared.module';
-
+import { AppComponent }  from './app.component';
 
 @NgModule({
-
-  imports:      [BrowserModule, SharedModule.forRoot(), ReportModule, FormsModule, HttpModule ],
-  declarations: [
-    AppComponent
-  ],
-  bootstrap:    [ AppComponent ]
+    imports: [
+        BrowserModule,
+        SharedModule.forRoot(),
+        ReportModule
+    ],
+    declarations: [
+        AppComponent
+    ],
+    bootstrap: [AppComponent]
 })
+
 export class AppModule { }
