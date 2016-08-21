@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ReportCategory } from '../report-category';
-import { ReportItem } from './report-item';
+import { ReportItem } from '../report-item';
 import { CategoryPipe } from './category.pipe';
 
 @Component({

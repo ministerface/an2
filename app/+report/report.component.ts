@@ -15,9 +15,9 @@ import { TabsComponent } from './tabs/tabs.component';
 })
 export class ReportComponent {
   title:string;
-  currentDate:string;
+  currentDate:Date;
   reportData: ReportItem[];
-  reportCategory: ReportCategory;
+  reportCategory: ReportCategory[];
 
   constructor(private reportService: ReportService) { }
 
@@ -80,8 +80,7 @@ emitXmlFooter() {
            '</ss:Workbook>\n';
 };
 
-jsonToSsXml() {
-    var jsonObject = this.reportData;
+jsonToSsXml(jsonObject) {
     var row;
     var col;
     var xml;
@@ -125,19 +124,19 @@ minute: 'numeric',
 second: 'numeric'
 };
 
-    var content = this.jsonToSsXml();
+    var content = this.jsonToSsXml(this.reportData);
     var filename = this.title+' '+this.currentDate.toLocaleString("en-US", options);
     var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
     if (!contentType) contentType = 'application/octet-stream';
+    /*
+    var a  = document.getElementById('test');
 
-    var a = document.getElementById('test');
-
-    var blob = new Blob([content], {
+    var blob  = new Blob([content], {
         'type': contentType
     });
     a.href = window.URL.createObjectURL(blob);
-    a.download = filename;
-
+    a.download  = filename;
+    */
 };
 
 

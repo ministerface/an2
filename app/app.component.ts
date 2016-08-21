@@ -12,18 +12,6 @@ export class AppComponent {
 
   }
 
-
-
-/*
-  ngAfterViewInit() {
-
-    if (!window.history.state) {
-        window.history.pushState({param: '1'}, '', '');
-        window.open("/","_self");
-    }
-  }
-  */
-
   title = 'Wholesale access interface';
   copyright = 'DonRiver';
 

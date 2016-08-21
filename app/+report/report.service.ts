@@ -5,7 +5,7 @@ import { REPORT } from './data-report';
 
 @Injectable()
 export class ReportService {
-  getReport(): Promise<Report[]> {
+  getReport(): Promise<Report> {
     return Promise.resolve(REPORT);
   }
 }
